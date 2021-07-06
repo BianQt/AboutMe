@@ -90,11 +90,6 @@ if ((q5=='yes') || (q5=="y")){
 
 //Questin VI
 let q6 = prompt('How old I am do you think?');
-console.log(typeof(q6));
-while( isNaN(val) ){
-    alert('Please Enter a Number.');
-    q6 = prompt('How old I am do you think?');
-}
 
 for(let i=0; i<4; i++){
     if (q6==27){
