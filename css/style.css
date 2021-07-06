@@ -82,7 +82,7 @@ body {
        font-weight: normal;
        color: #000;
   }
-  
+
   .skills {
     margin: 50px auto 50px auto;
     text-align: center;
@@ -92,6 +92,11 @@ body {
     width: 50%;
     margin: 40px auto;
     text-align: center;
+  }
+  .skill-row ::before {
+    content: "•"; /* Insert content that looks like bullets */
+    padding-right: 8px;
+    color: #66BFBF; /* Or a color you prefer */
   }
   
   .hobbies{
@@ -122,8 +127,40 @@ body {
     border-radius: 100%;
   }
   
- 
+  ol {
+    list-style: none;
+    counter-reset: item;
+  }
+  li {
+    counter-increment: item;
+    margin-bottom: 5px;
+  }
+
+  .ttb {
+    margin: 50px auto 50px auto;
+    text-align: center;
+   
+  }
   
+  .ttb-row {
+    width: 50%;
+    margin: 40px auto;
+    text-align: center;
+  }
+  .ttb-row:before {
+    margin-right: 0;
+    content: counter(item);
+    background: #66BFBF;
+    border-radius: 100%;
+    color: white;
+    width: 1.1em;
+    height: 1.1em;
+    text-align: center;
+    display: inline-block;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
   footer {
     background-color: #66BFBF;
     text-align: center;

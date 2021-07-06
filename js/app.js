@@ -1,8 +1,8 @@
 'use strict';
 
-let userName = prompt('What is your name?');
-alert('Hello '+userName+', it\'s my pleasure to meet you.');
-alert('Before we get into the webpage, lets play a quick Yes or No game ☺☺');
+let userName = prompt('What Is Your Name?');
+alert('Hello '+userName+', It\'s My Pleasure to Meet You.');
+alert('Before We Get Into The Webpage, Lets Play a Quick Gussing Game ☺☺');
 
 //Number of correct answers
 let answer = 0 ;
@@ -87,4 +87,53 @@ if ((q5=='yes') || (q5=="y")){
     answer = answer+1; 
 }
 
-alert ('You Got '+answer+' Out of 5 '+userName+'. Thank You for Playing ☺☺☺☺');
+
+//Questin VI
+let q6 = prompt('How old I am do you think?');
+console.log(typeof(q6));
+while( isNaN(val) ){
+    alert('Please Enter a Number.');
+    q6 = prompt('How old I am do you think?');
+}
+
+for(let i=0; i<4; i++){
+    if (q6==27){
+        console.log('Correct Answer.');
+        alert('Wow, You Gussed It.'); 
+        answer = answer+1;
+        break 
+    } else {
+        console.log('Wrong Answer.');
+        if (q6>27){alert('Oops, That\'s Wrong Am younger Than That!'); }
+         else {alert('Oops, That\'s Wrong Am Older Than That!'); }
+        if (i==3){ 
+            alert('Sorry, you have exceeded the maximum number of attempts, I Am 27 Years Old');
+            break   
+        }
+        q6 = prompt('How old I am do you think?');
+    }
+}
+
+// Questin VII
+let q7 = prompt('What do you think my favorite color is?').toLowerCase();
+let color = ['blue', 'black', 'purple', 'yellow' ,'red']
+for(let i=0; i<7; i++){
+   
+    if (q7==color[0] || q7==color[1] || q7==color[2] || q7==color[3] || q7==color[4]){
+        alert('Yay, That\'s Right It\'s one of my favorites.'); 
+        answer = answer+1;
+        break
+    }
+
+    else {alert('Oops, That\'s Wrong.'); 
+           if (i==6){ 
+                    alert('Sorry, you have exceeded the maximum number of attempts, These Are My Favoites: '+color);
+                    break } 
+        q7 = prompt('What do you think my favorite color is?').toLowerCase();
+    }
+}
+    
+alert ('You Got '+answer+' Out of 7 '+userName+'. Thank You for Playing ☺☺☺☺');
+
+
+

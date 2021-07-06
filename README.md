@@ -14,3 +14,15 @@ I build this webapage to give some basic information about who I am. This lab is
  * How did this go, overall? "It was great, there were some obstacles but thanks to TAs & Google every things went good."
 * What observations or questions do you have about what you’ve learned so far?  "When we will use JS inside the html not just alert and consoleLog?!"
 * How long did it take you to complete this assignment? And, before you started, how long did you think it would take you to complete this assignment?   "The actual lab took around (30-45)min, but the stretch goals took 3 hours. I gave the JS the same amount of time but the CSS took a lot of time I thought it would take 1 hour !!!!!!!!!!!!!!!"
+
+# LAB - 03
+##  Extend  “About Me” project
+## Author: Bayan Qutshan
+## Links and Resources
+* [Style Order List Numbers](https://stackoverflow.com/questions/23610151/can-you-style-ordered-list-numbers)
+* [CSS ::before Selector](https://www.w3schools.com/cssref/sel_before.asp)
+
+## Reflections and Comments
+ * Put my skills in an unordered list.
+ * Add my top ten books in a order list and style it.
+ * Use for loops to give the user opportunities to get the correct answer.
