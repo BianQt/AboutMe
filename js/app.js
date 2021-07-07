@@ -89,43 +89,57 @@ if ((q5=='yes') || (q5=="y")){
 
 
 //Questin VI
-let q6 = prompt('How old I am do you think?');
+let q6 = prompt('How many years of experinec do you think I have?');
 
 for(let i=0; i<4; i++){
-    if (q6==27){
+    if (q6==5){
         console.log('Correct Answer.');
         alert('Wow, You Gussed It.'); 
+        console.log('Correct Answer.');
         answer = answer+1;
         break 
     } else {
         console.log('Wrong Answer.');
-        if (q6>27){alert('Oops, That\'s Wrong Am younger Than That!'); }
-         else {alert('Oops, That\'s Wrong Am Older Than That!'); }
+        if (q6>5){alert('Oops, That\'s Wrong It\'s Less Than That!'); }
+         else {alert('Oops, That\'s Wrong It\'s More Than That!'); }
         if (i==3){ 
-            alert('Sorry, you have exceeded the maximum number of attempts, I Am 27 Years Old');
+            alert('Sorry, you have exceeded the maximum number of attempts, I Have 5 Years Experience. ');
+            console.log('Incorrect Answer.');
             break   
         }
-        q6 = prompt('How old I am do you think?');
+        q6 = prompt('How many years of experinec do you think I have?');
     }
 }
 
 // Questin VII
 let q7 = prompt('What do you think my favorite color is?').toLowerCase();
-let color = ['blue', 'black', 'purple', 'yellow' ,'red']
+let color = ['blue', 'black', 'purple', 'yellow' ,'red'];
+let breakPoint = false ;
 for(let i=0; i<7; i++){
    
-    if (q7==color[0] || q7==color[1] || q7==color[2] || q7==color[3] || q7==color[4]){
-        alert('Yay, That\'s Right It\'s one of my favorites.'); 
-        answer = answer+1;
-        break
+    for (let index = 0; index < color.length; index++) {
+        if (q7==color[i]){
+            alert('Yay, That\'s Right It\'s one of my favorites.'); 
+            answer = answer+1;
+            breakPoint =true;
+            console.log('Correct Answer.');
+            break
+        }
     }
 
-    else {alert('Oops, That\'s Wrong.'); 
-           if (i==6){ 
-                    alert('Sorry, you have exceeded the maximum number of attempts, These Are My Favoites: '+color);
-                    break } 
-        q7 = prompt('What do you think my favorite color is?').toLowerCase();
-    }
+   if (breakPoint=== true){
+       break 
+   }
+
+   if (i==6){ 
+     alert('Sorry, you have exceeded the maximum number of attempts, These Are My Favoites: '+color);
+     console.log('Incorrect Answer.');
+      break 
+   } 
+
+   alert('Oops, That\'s Wrong.'); 
+   q7 = prompt('What do you think my favorite color is?').toLowerCase();
+    
 }
     
 alert ('You Got '+answer+' Out of 7 '+userName+'. Thank You for Playing ☺☺☺☺');
