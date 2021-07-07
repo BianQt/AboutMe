@@ -116,7 +116,7 @@ let breakPoint = false ;
 for(let i=0; i<7; i++){
    
     for (let index = 0; index < color.length; index++) {
-        if (q7==color[i]){
+        if (q7===color[index]){
             alert('Yay, That\'s Right It\'s one of my favorites.'); 
             answer = answer+1;
             breakPoint =true;
