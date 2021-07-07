@@ -93,13 +93,11 @@ let q6 = prompt('How many years of experinec do you think I have?');
 
 for(let i=0; i<4; i++){
     if (q6==5){
-        console.log('Correct Answer.');
         alert('Wow, You Gussed It.'); 
         console.log('Correct Answer.');
         answer = answer+1;
         break 
     } else {
-        console.log('Wrong Answer.');
         if (q6>5){alert('Oops, That\'s Wrong It\'s Less Than That!'); }
          else {alert('Oops, That\'s Wrong It\'s More Than That!'); }
         if (i==3){ 
