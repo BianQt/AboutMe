@@ -10,10 +10,10 @@ let answer = 0 ;
 function yesQuestion(q){
    
     if ((q=='yes') || (q=="y")){
-        //console.log('Wrong Answer.');
+        console.log('Incorrect Answer.');
         alert('Oops, That\'s Wrong');
     } else if ((q==="no") || (q=="n")){
-        //console.log('Correct Answer.');
+        console.log('Correct Answer.');
         alert('Yay, That\'s Right');  
         answer = answer+1;
     }
@@ -22,11 +22,11 @@ function yesQuestion(q){
 function noQuestion(q){
    
     if ((q2=='yes') || (q2=="y")){
-        //console.log('Correct Answer.');
+        console.log('Correct Answer.');
         alert('Yay, That\'s Right I Do.');
         answer = answer+1;
     } else if ((q2==="no") || (q2=="n")){
-        //console.log('Wrong Answer.');
+        console.log('Incorrect Answer.');
         alert('Oops, That\'s Wrong');  
     }
     
@@ -105,7 +105,6 @@ for(let i=0; i<4; i++){
         q6 = prompt('How many years of experinec do you think I have?');
     }
 }
-yesQuestion(q1);
 
 
 // Questin VII
